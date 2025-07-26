@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Osama | Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container">
+            <a href="index.html" class="logo">Mohamed Osama</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div id="lang-selector" class="lang-selector">
+                    <button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" width="16"> EN</button>
+                    <button class="lang-btn" data-lang="de"><img src="https://flagcdn.com/w20/de.png" alt="German Flag" width="16"> DE</button>
+                    <button class="lang-btn" data-lang="ar"><img src="https://flagcdn.com/w20/eg.png" alt="Egyptian Flag" width="16"> AR</button>
+                </div>
+                <div id="theme-toggle" class="theme-toggle">
+                    <span id="theme-icon" class="theme-toggle-icon">🌙</span>
+                    <span id="theme-text" class="theme-toggle-text" data-i18n="dark_mode">Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Animated Background -->
+        <section class="hero-modern">
+            <div class="hero-background">
+                <div class="animated-gradient"></div>
+            </div>
+            <div class="container split-content">
+                <div class="hero-text">
+                    <h1 class="hero-title"><span class="text-gradient" data-i18n="hero_greeting">Hello, I'm</span> Mohamed Osama</h1>
+                    <h2 class="hero-subtitle" data-i18n="hero_role">Software Developer</h2>
+                    <p class="hero-description" data-i18n="hero_description">I build exceptional digital experiences with innovative solutions and clean code.</p>
+                    <div class="hero-cta">
+                        <a href="projects.html" class="btn btn-primary" data-i18n="view_projects">View Projects</a>
+                        <a href="contact.html" class="btn btn-secondary" data-i18n="get_in_touch">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/backgrounds/mano.jpg" alt="Developer illustration" class="floating-animation">
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics with animated counters -->
+        <section class="stats-modern">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="key_stats">Professional Journey</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-code"></i></div>
+                        <div class="stat-value" id="experience-count">0</div>
+                        <div class="stat-label" data-i18n="years_experience">Years of Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="stat-value" id="project-count">0</div>
+                        <div class="stat-label" data-i18n="projects_completed">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-value" id="client-count">0</div>
+                        <div class="stat-label" data-i18n="happy_clients">Happy Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-value" id="award-count">0</div>
+                        <div class="stat-label" data-i18n="awards_won">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="my_skills">My Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h3 data-i18n="frontend">Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3 data-i18n="backend">Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3 data-i18n="tools">Tools & Others</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">UI/UX</span>
+                            <span class="skill-tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects with modern cards -->
+        <section class="projects-showcase">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="featured_projects">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/project1.jpg')"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">A full-stack e-commerce solution with secure payment processing and inventory management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <a href="projects.html" class="btn-project" data-i18n="view_details">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/project2.jpg')"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Task Manager</h3>
+                            <p class="project-description">Smart task management application with AI-powered prioritization and scheduling features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Vue.js</span>
+                            </div>
+                            <a href="projects.html" class="btn-project" data-i18n="view_details">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/project3.jpg')"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Health Monitoring System</h3>
+                            <p class="project-description">IoT-based health monitoring system with real-time analytics and emergency alerts.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">React Native</span>
+                            </div>
+                            <a href="projects.html" class="btn-project" data-i18n="view_details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-btn">
+                    <a href="projects.html" class="btn btn-primary" data-i18n="all_projects">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-i18n="lets_work_together">Let's Work Together</h2>
+                    <p class="cta-text" data-i18n="cta_description">Have a project in mind? I'm available for freelance work and collaborations.</p>
+                    <a href="contact.html" class="btn btn-cta" data-i18n="contact_me">Contact Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Mohamed Osama</h3>
+                    <p class="footer-tagline" data-i18n="footer_tagline">Building digital solutions with passion and precision</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4 data-i18n="site_map">Site Map</h4>
+                        <ul>
+                            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                            <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+                            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h4 data-i18n="connect">Connect</h4>
+                        <div class="social-icons">
+                            <a href="https://wa.me/201228690380" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="http://t.me/mano2224" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Mohamed Osama. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

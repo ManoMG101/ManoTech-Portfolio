@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container">
+            <a href="index.html" class="logo">Mohamed Osama</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="projects.html" class="active" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div id="lang-selector" class="lang-selector">
+                    <button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" width="16"> EN</button>
+                    <button class="lang-btn" data-lang="de"><img src="https://flagcdn.com/w20/de.png" alt="German Flag" width="16"> DE</button>
+                    <button class="lang-btn" data-lang="ar"><img src="https://flagcdn.com/w20/eg.png" alt="Egyptian Flag" width="16"> AR</button>
+                </div>
+                <div id="theme-toggle" class="theme-toggle">
+                    <span id="theme-icon" class="theme-toggle-icon">🌙</span>
+                    <span id="theme-text" class="theme-toggle-text" data-i18n="dark_mode">Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <div class="container">
+                <h2 data-i18n="my_projects">My Projects</h2>
+                <p data-i18n="projects_intro">Here are some of the projects I've worked on. Each represents different skills and technologies I've utilized in my career.</p>
+                
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/projects/project1.jpg" alt="Project 1 Screenshot" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 1</h3>
+                        <p>Detailed description of your first project. Explain what problem it solves, the approach you took, challenges you faced, and the outcome. Make sure to include enough details to showcase your skills and thinking process.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small" data-i18n="view_live">View Live</a>
+                            <a href="#" class="btn-small" data-i18n="view_code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/projects/project2.jpg" alt="Project 2 Screenshot" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 2</h3>
+                        <p>Detailed description of your second project. Explain what problem it solves, the approach you took, challenges you faced, and the outcome. Make sure to include enough details to showcase your skills and thinking process.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small" data-i18n="view_live">View Live</a>
+                            <a href="#" class="btn-small" data-i18n="view_code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/projects/project3.jpg" alt="Project 3 Screenshot" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 3</h3>
+                        <p>Detailed description of your third project. Explain what problem it solves, the approach you took, challenges you faced, and the outcome. Make sure to include enough details to showcase your skills and thinking process.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small" data-i18n="view_live">View Live</a>
+                            <a href="#" class="btn-small" data-i18n="view_code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mohamed Osama. All rights reserved.</p>
+            <div class="social">
+                <a href="https://wa.me/201228690380" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="http://t.me/mano2224" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
