@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="glass-header">
+        <div class="container">
+            <a href="index.html" class="logo">Mohamed Osama</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div id="lang-selector" class="lang-selector">
+                    <!-- <button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" width="16"> EN</button>
+                    <button class="lang-btn" data-lang="de"><img src="https://flagcdn.com/w20/de.png" alt="German Flag" width="16"> DE</button> -->
+                    <button class="lang-btn" data-lang="en"><img src="images/assets/en.png" alt="UK Flag" width="16"> EN</button>
+                    <button class="lang-btn" data-lang="de"><img src="images/assets/de.png" alt="German Flag" width="16"> DE</button>
+                    <!-- <button class="lang-btn" data-lang="ar"><img src="https://flagcdn.com/w20/eg.png" alt="Egyptian Flag" width="16"> AR</button> -->
+                </div>
+                <div id="theme-toggle" class="theme-toggle">
+                    <span id="theme-icon" class="theme-toggle-icon">🌙</span>
+                    <span id="theme-text" class="theme-toggle-text" data-i18n="dark_mode">Dark Mode</span>
+                </div>
+                <div id="hacker-toggle" class="theme-toggle hacker-toggle">
+                    <span class="theme-toggle-icon">💀</span>
+                    <span class="theme-toggle-text">Hacker Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2 data-i18n="get_in_touch_title">Get in Touch</h2>
+                <p data-i18n="contact_text">Feel free to contact me for work opportunities, collaborations, or just to say hello!</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h3 data-i18n="send_message">Send Me a Message</h3>
+                        <form id="contact-form" action="https://formspree.io/f/xeajeyro" method="POST">
+                            <div class="form-group">
+                                <label for="name" data-i18n="form_name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-i18n="form_email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" data-i18n="form_subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-i18n="form_message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn" data-i18n="send_button">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3 data-i18n="contact_info">Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4 data-i18n="email">Email</h4>
+                                <p><a href="mailto:your.email@example.com">mohamedmano310@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4 data-i18n="phone">Phone</h4>
+                                <p>(+20) 1019626309</p>
+                                <p>(+20) 1228690380</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4 data-i18n="location">Location</h4>
+                                <p data-i18n="egypt">Zagazig, Egypt</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <h4 data-i18n="connect_with_me">Connect With Me</h4>
+                            <p data-i18n="social_text">Find me on these platforms:</p>
+                            <div class="social-links-container">
+                                <!-- Professional Networks -->
+                                <a href="https://www.linkedin.com/in/mg101" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                                    <div class="social-icon linkedin-icon">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/ManoMG101" class="social-link" aria-label="GitHub" title="GitHub">
+                                    <div class="social-icon github-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                </a>
+                                
+                                <!-- Social Networks -->
+                                <a href="https://www.facebook.com/ManoMG101" class="social-link" aria-label="Facebook" title="Facebook">
+                                    <div class="social-icon facebook-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+                                <a href="https://www.instagram.com/iam.mano?igsh=MWxveDA2eTg0bnJwNg==" class="social-link" aria-label="Instagram" title="Instagram">
+                                    <div class="social-icon instagram-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </a>
+                                
+                                <!-- Messaging -->
+                                <a href="https://wa.me/201228690380" class="social-link" aria-label="WhatsApp" title="WhatsApp">
+                                    <div class="social-icon whatsapp-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                </a>
+                                <a href="http://t.me/ManoMG" class="social-link" aria-label="Telegram" title="Telegram">
+                                    <div class="social-icon telegram-icon">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohamed Osama. All rights reserved.</p>
+            <div class="social">
+                <a href="https://wa.me/201228690380" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="http://t.me/ManoMG" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://www.linkedin.com/in/mg101" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+<div id="boot-screen">
+    <pre id="boot-text"></pre>
+
+    <div id="access-granted">
+        ACCESS GRANTED
+    </div>
+</div>
+    <canvas id="matrix"></canvas>
+</body>
+</html>
