@@ -6,7 +6,7 @@ The website presents my professional background, technical skills, projects, ach
 
 ## 🌐 Live Website
 
-**Portfolio:** [Add your Vercel URL here]
+**Portfolio:** [(https://ismmohamed.vercel.app)]
 
 ## 👨‍💻 About
 
@@ -49,9 +49,7 @@ This portfolio is used to showcase my technical knowledge, practical projects, c
 
 * **Home** — Introduction and professional overview
 * **About** — Background and career interests
-* **Skills** — Technical skills and technologies
 * **Projects** — Practical IT and technical projects
-* **Achievements** — Professional recognition and achievements
 * **Contact** — Contact form for direct communication
 
 ## ✨ Features
@@ -61,18 +59,17 @@ This portfolio is used to showcase my technical knowledge, practical projects, c
 * Hacker Mode
 * Matrix-style visual effects
 * Boot screen animation
-* English and Arabic language support
+* English and German language support
 * Interactive statistics
 * Contact form with email delivery
-* Mobile-friendly layout
 
 ## 📬 Contact
 
 **Email:** [mohamedmano310@gmail.com](mailto:mohamedmano310@gmail.com)
 
-**LinkedIn:** Add your LinkedIn profile
+**LinkedIn:** [https://www.linkedin.com/in/mg101](https://www.linkedin.com/in/mg101)
 
-**GitHub:** Add your GitHub profile
+**GitHub:** [https://github.com/ManoMG101](https://github.com/ManoMG101)
 
 ## 📄 License
 
