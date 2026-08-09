@@ -1,53 +1,81 @@
-# Personal Website
+# ManoTech Portfolio
 
-A clean, responsive personal website template with basic pages including Home, About, Projects, and Contact.
+Personal portfolio website for **Mohamed Osama Ismail**, focused on IT Support, System Administration, Microsoft technologies, networking, and infrastructure.
 
-## Features
+The website presents my professional background, technical skills, projects, achievements, and contact information in a responsive and interactive interface.
 
-- Responsive design that works on mobile, tablet, and desktop
-- Simple and modern UI
-- Easy to customize and update
-- Smooth navigation
-- Contact form with validation (frontend only)
-- Project showcase
+## 🌐 Live Website
 
-## Pages
+**Portfolio:** [Add your Vercel URL here]
 
-1. **Home** - Landing page with introduction and featured projects
-2. **About** - Personal information, skills, experience, and education
-3. **Projects** - Detailed project showcase with descriptions
-4. **Contact** - Contact form and personal contact information
+## 👨‍💻 About
 
-## Customization
+I am an IT professional with hands-on experience in technical support and a strong interest in **System Administration, Windows Server, Microsoft technologies, networking, and IT infrastructure**.
 
-To customize this website for your own use:
+This portfolio is used to showcase my technical knowledge, practical projects, certifications, and ongoing learning journey.
 
-1. Replace "My Name" with your actual name throughout all HTML files
-2. Update the placeholder text in each page with your personal information
-3. Replace the placeholder image in the About page with your own photo
-4. Update project details with your own projects
-5. Add your actual contact information
-6. Update social media links to point to your profiles
-7. Optional: Add icons by linking to a library like Font Awesome
+## 🛠️ Technologies
 
-## Structure
+### Web Development
 
-```
-personal-website/
-├── index.html        # Home page
-├── about.html        # About page  
-├── projects.html     # Projects page
-├── contact.html      # Contact page
-├── css/
-│   └── style.css     # Stylesheet
-└── js/
-    └── script.js     # JavaScript functionality
-```
+* HTML5
+* CSS3
+* JavaScript
+* Responsive Web Design
 
-## Usage
+### IT & Infrastructure
 
-Simply open any HTML file in a web browser to view the site locally. To deploy online, upload all files to your web hosting service.
+* Windows Server
+* Active Directory
+* DNS
+* DHCP
+* Group Policy
+* Microsoft Azure
+* Microsoft 365
+* Networking
+* TCP/IP
+* Linux
+* VMware
 
-## License
+### Tools
 
-Feel free to use and modify this template for your personal website.
+* Git & GitHub
+* PowerShell
+* VMware Workstation
+* Microsoft Admin Center
+* Azure Portal
+
+## 📂 Website Sections
+
+* **Home** — Introduction and professional overview
+* **About** — Background and career interests
+* **Skills** — Technical skills and technologies
+* **Projects** — Practical IT and technical projects
+* **Achievements** — Professional recognition and achievements
+* **Contact** — Contact form for direct communication
+
+## ✨ Features
+
+* Responsive design
+* Dark / Light theme
+* Hacker Mode
+* Matrix-style visual effects
+* Boot screen animation
+* English and Arabic language support
+* Interactive statistics
+* Contact form with email delivery
+* Mobile-friendly layout
+
+## 📬 Contact
+
+**Email:** [mohamedmano310@gmail.com](mailto:mohamedmano310@gmail.com)
+
+**LinkedIn:** Add your LinkedIn profile
+
+**GitHub:** Add your GitHub profile
+
+## 📄 License
+
+This project is a personal portfolio website created by Mohamed Osama Ismail.
+
+The source code and design are intended for personal use and demonstration purposes.
