@@ -22,13 +22,19 @@
             </nav>
             <div class="header-controls">
                 <div id="lang-selector" class="lang-selector">
-                    <button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" width="16"> EN</button>
-                    <button class="lang-btn" data-lang="de"><img src="https://flagcdn.com/w20/de.png" alt="German Flag" width="16"> DE</button>
-                    <button class="lang-btn" data-lang="ar"><img src="https://flagcdn.com/w20/eg.png" alt="Egyptian Flag" width="16"> AR</button>
+                    <!-- <button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" width="16"> EN</button>
+                    <button class="lang-btn" data-lang="de"><img src="https://flagcdn.com/w20/de.png" alt="German Flag" width="16"> DE</button> -->
+                    <button class="lang-btn" data-lang="en"><img src="images/assets/en.png" alt="UK Flag" width="16"> EN</button>
+                    <button class="lang-btn" data-lang="de"><img src="images/assets/de.png" alt="German Flag" width="16"> DE</button>
+                    <!-- <button class="lang-btn" data-lang="ar"><img src="https://flagcdn.com/w20/eg.png" alt="Egyptian Flag" width="16"> AR</button> -->
                 </div>
                 <div id="theme-toggle" class="theme-toggle">
                     <span id="theme-icon" class="theme-toggle-icon">🌙</span>
                     <span id="theme-text" class="theme-toggle-text" data-i18n="dark_mode">Dark Mode</span>
+                </div>
+                <div id="hacker-toggle" class="theme-toggle hacker-toggle">
+                    <span class="theme-toggle-icon">💀</span>
+                    <span class="theme-toggle-text">Hacker Mode</span>
                 </div>
             </div>
         </div>
@@ -43,15 +49,16 @@
             <div class="container split-content">
                 <div class="hero-text">
                     <h1 class="hero-title"><span class="text-gradient" data-i18n="hero_greeting">Hello, I'm</span> Mohamed Osama</h1>
-                    <h2 class="hero-subtitle" data-i18n="hero_role">Software Developer</h2>
-                    <p class="hero-description" data-i18n="hero_description">I build exceptional digital experiences with innovative solutions and clean code.</p>
+                    <h2 class="hero-subtitle" id="hero-role">Software Developer</h2>
+                    <p class="hero-description" data-i18n="hero_description">I build and secure reliable IT infrastructures with modern technologies, focusing on system administration and cybersecurity.</p>
                     <div class="hero-cta">
                         <a href="projects.html" class="btn btn-primary" data-i18n="view_projects">View Projects</a>
                         <a href="contact.html" class="btn btn-secondary" data-i18n="get_in_touch">Get in Touch</a>
+                        <br><br>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="images/backgrounds/mano.jpg" alt="Developer illustration" class="floating-animation">
+                    <img src="images/backgrounds/Mano-Main2.png" alt="Developer illustration" class="floating-animation">
                 </div>
             </div>
         </section>
@@ -66,22 +73,22 @@
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-icon"><i class="fas fa-code"></i></div>
-                        <div class="stat-value" id="experience-count">0</div>
+                        <div class="stat-value" id="experience-count">2</div>
                         <div class="stat-label" data-i18n="years_experience">Years of Experience</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
-                        <div class="stat-value" id="project-count">0</div>
+                        <div class="stat-value" id="project-count">8</div>
                         <div class="stat-label" data-i18n="projects_completed">Projects Completed</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon"><i class="fas fa-users"></i></div>
-                        <div class="stat-value" id="client-count">0</div>
+                        <div class="stat-value" id="client-count">1000<</div>
                         <div class="stat-label" data-i18n="happy_clients">Happy Clients</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon"><i class="fas fa-trophy"></i></div>
-                        <div class="stat-value" id="award-count">0</div>
+                        <div class="stat-value" id="award-count">1</div>
                         <div class="stat-label" data-i18n="awards_won">Awards Won</div>
                     </div>
                 </div>
@@ -97,33 +104,37 @@
                 </div>
                 <div class="skills-container">
                     <div class="skill-group">
-                        <h3 data-i18n="frontend">Frontend</h3>
+                        <h3 data-i18n="Programming">Programming</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Visual Studio Code</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">Visual Studio Code</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">GitHub</span>
+                            
                         </div>
                     </div>
                     <div class="skill-group">
-                        <h3 data-i18n="backend">Backend</h3>
+                        <h3 data-i18n="System_administration">System Administration</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Windows Server</span>
+                            <span class="skill-tag">Virtualization</span>
+                            <span class="skill-tag">Microsoft 365 Administration</span>
+                            <span class="skill-tag">Networking CCNA</span>
+                            <span class="skill-tag">Microsoft Entra ID (Azure AD)</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h3 data-i18n="tools">Tools & Others</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">UI/UX</span>
-                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Android Studio</span>
+                            <span class="skill-tag">Cisco Packet Tracer</span>
+                            <span class="skill-tag">Security+ 701</span>
+                            <span class="skill-tag">Kali-Linux</span>
                         </div>
                     </div>
                 </div>
@@ -141,12 +152,12 @@
                     <div class="project-card">
                         <div class="project-image" style="background-image: url('images/project1.jpg')"></div>
                         <div class="project-content">
-                            <h3 class="project-title">E-Commerce Platform</h3>
-                            <p class="project-description">A full-stack e-commerce solution with secure payment processing and inventory management.</p>
+                            <h3 class="project-title" data-i18n="project1_index">Windows Server Environment</h3>
+                            <p class="project-description" data-i18n="project1_description">Built and configured a Windows Server 2019 environment with Active Directory, DNS, and DHCP to improve security and centralize user management.</p>
                             <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Windows Server 2019</span>
+                                <span class="tech-tag">VMware Workstation</span>
+                                <span class="tech-tag">Active Directory</span>
                             </div>
                             <a href="projects.html" class="btn-project" data-i18n="view_details">View Details</a>
                         </div>
@@ -154,12 +165,12 @@
                     <div class="project-card">
                         <div class="project-image" style="background-image: url('images/project2.jpg')"></div>
                         <div class="project-content">
-                            <h3 class="project-title">AI Task Manager</h3>
-                            <p class="project-description">Smart task management application with AI-powered prioritization and scheduling features.</p>
+                            <h3 class="project-title" data-i18n="project2_index">Mobile Portfolio Application</h3>
+                            <p class="project-description" data-i18n="project2_description" >Created a cross-platform mobile portfolio application using Flutter and Dart to present projects, skills, and contact information in a modern interface.</p>
                             <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">TensorFlow</span>
-                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">Android Studio</span>
                             </div>
                             <a href="projects.html" class="btn-project" data-i18n="view_details">View Details</a>
                         </div>
@@ -167,12 +178,12 @@
                     <div class="project-card">
                         <div class="project-image" style="background-image: url('images/project3.jpg')"></div>
                         <div class="project-content">
-                            <h3 class="project-title">Health Monitoring System</h3>
-                            <p class="project-description">IoT-based health monitoring system with real-time analytics and emergency alerts.</p>
+                            <h3 class="project-title" data-i18n="project3_index" >Responsive Portfolio Website</h3>
+                            <p class="project-description" data-i18n="project3_description" >Developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills, projects, and experience across all devices.</p>
                             <div class="project-tech">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">AWS</span>
-                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
                             </div>
                             <a href="projects.html" class="btn-project" data-i18n="view_details">View Details</a>
                         </div>
@@ -217,16 +228,24 @@
                         <h4 data-i18n="connect">Connect</h4>
                         <div class="social-icons">
                             <a href="https://wa.me/201228690380" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                            <a href="http://t.me/mano2224" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="http://t.me/ManoMG" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://www.linkedin.com/in/mg101" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="copyright">&copy; 2025 Mohamed Osama. All rights reserved.</p>
+                <p class="copyright">&copy; 2026 Mohamed Osama. All rights reserved.</p>
             </div>
         </div>
     </footer>
+<div id="boot-screen">
+    <pre id="boot-text"></pre>
+
+    <div id="access-granted">
+        ACCESS GRANTED
+    </div>
+</div>
+    <canvas id="matrix"></canvas>
 </body>
 </html>

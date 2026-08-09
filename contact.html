@@ -22,13 +22,19 @@
             </nav>
             <div class="header-controls">
                 <div id="lang-selector" class="lang-selector">
-                    <button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" width="16"> EN</button>
-                    <button class="lang-btn" data-lang="de"><img src="https://flagcdn.com/w20/de.png" alt="German Flag" width="16"> DE</button>
-                    <button class="lang-btn" data-lang="ar"><img src="https://flagcdn.com/w20/eg.png" alt="Egyptian Flag" width="16"> AR</button>
+                    <!-- <button class="lang-btn" data-lang="en"><img src="https://flagcdn.com/w20/gb.png" alt="UK Flag" width="16"> EN</button>
+                    <button class="lang-btn" data-lang="de"><img src="https://flagcdn.com/w20/de.png" alt="German Flag" width="16"> DE</button> -->
+                    <button class="lang-btn" data-lang="en"><img src="images/assets/en.png" alt="UK Flag" width="16"> EN</button>
+                    <button class="lang-btn" data-lang="de"><img src="images/assets/de.png" alt="German Flag" width="16"> DE</button>
+                    <!-- <button class="lang-btn" data-lang="ar"><img src="https://flagcdn.com/w20/eg.png" alt="Egyptian Flag" width="16"> AR</button> -->
                 </div>
                 <div id="theme-toggle" class="theme-toggle">
                     <span id="theme-icon" class="theme-toggle-icon">🌙</span>
                     <span id="theme-text" class="theme-toggle-text" data-i18n="dark_mode">Dark Mode</span>
+                </div>
+                <div id="hacker-toggle" class="theme-toggle hacker-toggle">
+                    <span class="theme-toggle-icon">💀</span>
+                    <span class="theme-toggle-text">Hacker Mode</span>
                 </div>
             </div>
         </div>
@@ -43,7 +49,7 @@
                 <div class="contact-grid">
                     <div class="contact-form">
                         <h3 data-i18n="send_message">Send Me a Message</h3>
-                        <form id="contact-form">
+                        <form id="contact-form" action="https://formspree.io/f/xeajeyro" method="POST">
                             <div class="form-group">
                                 <label for="name" data-i18n="form_name">Name</label>
                                 <input type="text" id="name" name="name" required>
@@ -92,7 +98,7 @@
                             <div class="contact-icon">📍</div>
                             <div>
                                 <h4 data-i18n="location">Location</h4>
-                                <p>Zagazig, Egypt</p>
+                                <p data-i18n="egypt">Zagazig, Egypt</p>
                             </div>
                         </div>
                         
@@ -101,19 +107,19 @@
                             <p data-i18n="social_text">Find me on these platforms:</p>
                             <div class="social-links-container">
                                 <!-- Professional Networks -->
-                                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                                <a href="https://www.linkedin.com/in/mg101" class="social-link" aria-label="LinkedIn" title="LinkedIn">
                                     <div class="social-icon linkedin-icon">
                                         <i class="fab fa-linkedin-in"></i>
                                     </div>
                                 </a>
-                                <a href="#" class="social-link" aria-label="GitHub" title="GitHub">
+                                <a href="https://github.com/ManoMG101" class="social-link" aria-label="GitHub" title="GitHub">
                                     <div class="social-icon github-icon">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </a>
                                 
                                 <!-- Social Networks -->
-                                <a href="https://www.facebook.com/mohamed.mano20012" class="social-link" aria-label="Facebook" title="Facebook">
+                                <a href="https://www.facebook.com/ManoMG101" class="social-link" aria-label="Facebook" title="Facebook">
                                     <div class="social-icon facebook-icon">
                                         <i class="fab fa-facebook-f"></i>
                                     </div>
@@ -130,7 +136,7 @@
                                         <i class="fab fa-whatsapp"></i>
                                     </div>
                                 </a>
-                                <a href="http://t.me/mano2224" class="social-link" aria-label="Telegram" title="Telegram">
+                                <a href="http://t.me/ManoMG" class="social-link" aria-label="Telegram" title="Telegram">
                                     <div class="social-icon telegram-icon">
                                         <i class="fab fa-telegram-plane"></i>
                                     </div>
@@ -145,13 +151,21 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Mohamed Osama. All rights reserved.</p>
+            <p>&copy; 2026 Mohamed Osama. All rights reserved.</p>
             <div class="social">
                 <a href="https://wa.me/201228690380" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="http://t.me/mano2224" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="http://t.me/ManoMG" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://www.linkedin.com/in/mg101" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
+<div id="boot-screen">
+    <pre id="boot-text"></pre>
+
+    <div id="access-granted">
+        ACCESS GRANTED
+    </div>
+</div>
+    <canvas id="matrix"></canvas>
 </body>
 </html>
