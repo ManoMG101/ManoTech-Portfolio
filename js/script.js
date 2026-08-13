@@ -867,6 +867,8 @@ const roleElement =
 
 function typeRole(text) {
 
+    if (!roleElement) return;
+
     roleElement.textContent = "";
 
     let i = 0;
@@ -894,4 +896,70 @@ function typeRole(text) {
     }, 80);
 }
 
-typeRole(roles[0]);
+if (roleElement) {
+    typeRole(roles[0]);
+}
+
+// =====================================================
+// MOBILE MENU
+// =====================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.getElementById("mobile-menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+
+    if (!menuToggle || !mobileNav) {
+        return;
+    }
+
+    menuToggle.onclick = function () {
+
+        const isOpen = mobileNav.classList.toggle("mobile-open");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+        const icon = menuToggle.querySelector("i");
+
+        if (icon) {
+
+            if (isOpen) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+
+        }
+
+    };
+
+    const menuLinks = mobileNav.querySelectorAll("a");
+
+    menuLinks.forEach(function (link) {
+
+        link.onclick = function () {
+
+            mobileNav.classList.remove("mobile-open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            const icon = menuToggle.querySelector("i");
+
+            if (icon) {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+
+        };
+
+    });
+
+});
