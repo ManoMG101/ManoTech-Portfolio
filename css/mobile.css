@@ -106,11 +106,11 @@
 
     z-index: 9999 !important;
 
-    background: rgba(20, 20, 25, 0.96) !important;
+    background: var(--glass-bg) !important;
 
-    border-left: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-left: 1px solid var(--border-color) !important;
 
-    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.35) !important;
+    box-shadow: var(--glass-shadow) !important;
 
     transform: translateX(100%) !important;
 
@@ -425,6 +425,8 @@
         border: none !important;
 
         background: transparent !important;
+        
+        color: var(--text-primary) !important;
 
         cursor: pointer !important;
 
@@ -1028,6 +1030,14 @@
 
     .glass-header .mobile-menu-toggle {
         display: none !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .experience-timeline {
+        transform: translateX(-20px);
     }
 
 }

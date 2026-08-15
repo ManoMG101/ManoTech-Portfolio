@@ -132,21 +132,29 @@ function initThemeToggle() {
     const hackerToggle = document.getElementById('hacker-toggle');
 
     
-    // Check for saved theme preference or use user's system preference
-    const savedTheme = localStorage.getItem('theme');
-    const hackerMode = localStorage.getItem('hackerMode');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    // If user has a saved preference, use that; otherwise, use system preference
-    if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme)) {
-        document.body.classList.add('dark-mode');
-        updateThemeToggle(true);
-    } else {
-        document.body.classList.remove('dark-mode');
-        updateThemeToggle(false);
-    }
-    if (hackerMode === 'true') {
+// Check for saved theme preference
+const savedTheme = localStorage.getItem('theme');
+const hackerMode = localStorage.getItem('hackerMode');
+
+// Use saved preference, otherwise default to Dark Mode
+if (savedTheme === 'dark' || !savedTheme) {
+    document.body.classList.add('dark-mode');
+    updateThemeToggle(true);
+} else {
+    document.body.classList.remove('dark-mode');
+    updateThemeToggle(false);
+}
+
+if (hackerMode === 'true') {
+
     document.body.classList.add('hacker-mode');
+
+    const particles =
+        document.getElementById("particles-js");
+
+    if (particles) {
+        particles.style.opacity = "0";
+    }
 }
     
     // Theme toggle click handler
@@ -184,7 +192,7 @@ async function startBoot() {
     
     if (bootRunning) return;
     bootRunning = true;
-
+    document.getElementById("particles-js").style.opacity = "0";  /*test*/
     const screen = document.getElementById("boot-screen");
     const text = document.getElementById("boot-text");
 
@@ -333,7 +341,7 @@ accessGranted.style.opacity = "0";
 
             document.body.classList.remove("hacker-mode");
             localStorage.setItem("hackerMode", false);
-
+            document.getElementById("particles-js").style.opacity = "1"; /* test */
         } else {
 
             startBoot();
@@ -963,3 +971,74 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+// Background
+document.addEventListener("DOMContentLoaded", function () {
+
+    particlesJS("particles-js", {
+        particles: {
+            number: {
+                value: 120
+            },
+
+            color: {
+                value: "#5B7CFF"
+            },
+
+            shape: {
+                type: "circle"
+            },
+
+            opacity: {
+                value: 0.8
+            },
+
+            size: {
+                value: 3
+            },
+
+            line_linked: {
+                enable: true,
+                distance: 180,
+                color: "#5B7CFF",
+                opacity: 0.6,
+                width: 1.5
+            },
+
+            move: {
+                enable: true,
+                speed: 1.0
+            }
+        },
+
+        interactivity: {
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: "grab"
+                }
+            }
+        }
+    });
+
+});
+
+const bgToggle = document.getElementById("bg-toggle");
+
+let effectsEnabled = true;
+
+bgToggle.addEventListener("click", () => {
+
+    const particles =
+        document.getElementById("particles-js");
+
+    effectsEnabled = !effectsEnabled;
+
+    particles.style.opacity =
+        effectsEnabled ? "1" : "0";
+
+});
+
+

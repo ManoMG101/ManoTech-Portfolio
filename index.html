@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <div id="particles-js"></div>
 <header class="glass-header">
     <div class="container">
 
@@ -63,7 +65,12 @@
 
         <div class="header-controls">
 
+            <!-- <button id="bg-toggle" class="theme-btn">
+                 ✨ Effects ✨
+            </button> -->
+
             <div id="lang-selector" class="lang-selector">
+
                 <button class="lang-btn" data-lang="en">
                     <img src="images/assets/en.png" alt="UK Flag" width="16"> EN
                 </button>
@@ -212,7 +219,6 @@
                 </div>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-image" style="background-image: url('images/project1.jpg')"></div>
                         <div class="project-content">
                             <h3 class="project-title" data-i18n="project1_index">Windows Server Environment</h3>
                             <p class="project-description" data-i18n="project1_description">Built and configured a Windows Server 2019 environment with Active Directory, DNS, and DHCP to improve security and centralize user management.</p>
@@ -225,7 +231,6 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="project-image" style="background-image: url('images/project2.jpg')"></div>
                         <div class="project-content">
                             <h3 class="project-title" data-i18n="project2_index">Mobile Portfolio Application</h3>
                             <p class="project-description" data-i18n="project2_description" >Created a cross-platform mobile portfolio application using Flutter and Dart to present projects, skills, and contact information in a modern interface.</p>
@@ -238,7 +243,6 @@
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="project-image" style="background-image: url('images/project3.jpg')"></div>
                         <div class="project-content">
                             <h3 class="project-title" data-i18n="project3_index" >Responsive Portfolio Website</h3>
                             <p class="project-description" data-i18n="project3_description" >Developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills, projects, and experience across all devices.</p>
@@ -289,9 +293,9 @@
                     <div class="footer-social">
                         <h4 data-i18n="connect">Connect</h4>
                         <div class="social-icons">
-                            <a href="https://wa.me/201228690380" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                            <a href="http://t.me/ManoMG" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                            <a href="https://www.linkedin.com/in/mg101" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/201228690380" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                            <a href="http://t.me/ManoMG" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://www.linkedin.com/in/mg101" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -309,5 +313,10 @@
     </div>
 </div>
     <canvas id="matrix"></canvas>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
 </body>
 </html>
+
